@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <servlet>
-    <servlet-name>test</servlet-name>
-    <servlet-class>com.test</servlet-class>
+    <servlet-name>Reg</servlet-name>
+    <servlet-class>com.Reg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetForm</servlet-name>
+    <servlet-class>com.GetForm</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Dispatch</servlet-name>
+    <servlet-class>com.Dispatch</servlet-class>
   </servlet>
 
+
+
   <servlet-mapping>
-    <servlet-name>test</servlet-name>
-    <url-pattern>/servlet/test</url-pattern>
+    <servlet-name>Reg</servlet-name>
+    <url-pattern>/servlet/Reg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetForm</servlet-name>
+    <url-pattern>/servlet/GetForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Dispatch</servlet-name>
+    <url-pattern>/servlet/Dispatch</url-pattern>
   </servlet-mapping>
 
 </web-app>
